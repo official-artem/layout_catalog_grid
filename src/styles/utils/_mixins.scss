@@ -1,0 +1,23 @@
+@mixin width--488 {
+  @media (max-width: 488px) {
+    @content;
+  }
+}
+
+@mixin width--468-768 {
+  @media (min-width: 488px) {
+    @content;
+  }
+}
+
+@mixin width--768 {
+  @media (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin width--1024 {
+  @media (min-width: 1024px) {
+    @content;
+  }
+}
