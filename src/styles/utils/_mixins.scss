@@ -1,22 +1,16 @@
-@mixin width--488 {
-  @media (max-width: 488px) {
-    @content;
-  }
-}
-
-@mixin width--468-768 {
+@mixin onMobile {
   @media (min-width: 488px) {
     @content;
   }
 }
 
-@mixin width--768 {
+@mixin onTablet {
   @media (min-width: 768px) {
     @content;
   }
 }
 
-@mixin width--1024 {
+@mixin onDesctop {
   @media (min-width: 1024px) {
     @content;
   }

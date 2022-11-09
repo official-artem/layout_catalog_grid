@@ -5,20 +5,16 @@
   align-items: center;
   gap: 48px;
 
-  @include width--488 {
-    grid-template-columns: repeat(1, auto);
+  @include onMobile {
+    grid-template-columns: repeat(2, $cardWidth);
   }
 
-  @include width--468-768 {
-    grid-template-columns: repeat(2, auto);
+  @include onTablet {
+    grid-template-columns: repeat(3, $cardWidth);
   }
 
-  @include width--768 {
-    grid-template-columns: repeat(3, auto);
-  }
-
-  @include width--1024 {
-    grid-template-columns: repeat(4, auto);
+  @include onDesctop {
+    grid-template-columns: repeat(4, $cardWidth);
   }
 
   max-width: 944px;
@@ -28,7 +24,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 200px;
+    width: $cardWidth;
     height: 300px;
     border: 1px solid #ccc;
     border-radius: 5px;
