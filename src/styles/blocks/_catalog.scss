@@ -13,7 +13,7 @@
     grid-template-columns: repeat(3, $cardWidth);
   }
 
-  @include onDesctop {
+  @include onDesktop {
     grid-template-columns: repeat(4, $cardWidth);
   }
 
